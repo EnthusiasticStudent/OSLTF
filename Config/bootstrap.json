@@ -1,0 +1,25 @@
+{
+  "FrameworkVersion": "0.1",
+  "StationName": "Station01",
+
+  "Database":
+  {
+    "Type": "SQLite",
+    "Path": "Data/framework.db"
+  },
+
+  "Authentication":
+  {
+    "Provider": "Local"
+  },
+
+  "Execution":
+  {
+    "Engine": "TestStand"
+  },
+
+  "Results":
+  {
+    "Primary": "WATS"
+  }
+}
