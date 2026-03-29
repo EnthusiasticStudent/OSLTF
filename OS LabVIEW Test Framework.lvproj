@@ -23,11 +23,8 @@
 		<Item Name="Shared" Type="Folder"/>
 		<Item Name="Source" Type="Folder">
 			<Item Name="Adapters" Type="Folder">
-				<Item Name="TestStand" Type="Folder">
-					<Item Name="TestStand Adapter.lvclass" Type="LVClass" URL="../Source/Adapters/TestStand/TestStand Adapter/TestStand Adapter.lvclass"/>
-				</Item>
-				<Item Name="WATS" Type="Folder">
-					<Item Name="WATS Adapter.lvclass" Type="LVClass" URL="../Source/Adapters/WATS/WATS Adapter/WATS Adapter.lvclass"/>
+				<Item Name="GenericExecution" Type="Folder">
+					<Item Name="Generic Execution Adapter.lvclass" Type="LVClass" URL="../Source/Adapters/Generic Execution Adapter/Generic Execution Adapter.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Application" Type="Folder">
@@ -153,6 +150,11 @@
 				</Item>
 			</Item>
 			<Item Name="UI" Type="Folder">
+				<Item Name="Screens" Type="Folder">
+					<Item Name="Home.vi" Type="VI" URL="../Source/UI/Screens/Home.vi"/>
+					<Item Name="Login.vi" Type="VI" URL="../Source/UI/Screens/Login.vi"/>
+					<Item Name="Run.vi" Type="VI" URL="../Source/UI/Screens/Run.vi"/>
+				</Item>
 				<Item Name="Views" Type="Folder">
 					<Item Name="Admin View.lvclass" Type="LVClass" URL="../Source/UI/Views/Admin View/Admin View.lvclass"/>
 					<Item Name="Home View.lvclass" Type="LVClass" URL="../Source/UI/Views/Home View/Home View.lvclass"/>
