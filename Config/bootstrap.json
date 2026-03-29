@@ -1,25 +1,44 @@
 {
-  "FrameworkVersion": "0.1",
-  "StationName": "Station01",
-
-  "Database":
+  "authentication":
   {
-    "Type": "SQLite",
-    "Path": "Data/framework.db"
+    "provider": "LocalFile"
   },
 
-  "Authentication":
+  "database":
   {
-    "Provider": "Local"
+    "path": "Data/framework.db",
+    "type": "SQLite"
   },
 
-  "Execution":
+  "execution":
   {
-    "Engine": "TestStand"
+    "engine": "Generic"
   },
 
-  "Results":
+  "framework":
   {
-    "Primary": "WATS"
-  }
+    "version": "0.1"
+  },
+
+  "logging":
+  {
+    "path": "Logs/"
+  },
+
+  "paths":
+  {
+    "packages": "Packages/",
+    "plugins": "Plugins/",
+    "shared": "Shared/"
+  },
+
+  "station":
+  {
+    "name": "Station01"
+  },
+
+  "users":
+  {
+    "file": "Config/users.json"
+  }  
 }
