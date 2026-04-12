@@ -225,3 +225,20 @@ Start app
 - Logging Service
 - Authentication Service
 - Framework Engine wiring
+
+## Current Progress
+
+- `Execution Service.lvclass` implemented:
+  - `Run.vi`
+  - `Set Adapter.vi`
+  - `Get Status.vi`
+  - `Abort.vi`
+- `Execution Service.lvclass` uses a shared helper VI to check whether a concrete execution adapter has been loaded.
+- `Settings Service.lvclass` updated:
+  - `Bootstrap Config` cluster typedef matches `Config/bootstrap.json`
+  - `Load Effective Settings.vi` loads settings into class data
+  - settings loading uses section-specific JSON loader subVIs
+  - validation runs after loading and before class data is updated
+  - if loading or validation fails, uninitialized `Settings Service` data is returned
+- Next implementation target:
+  - `Authentication Service.lvclass`
