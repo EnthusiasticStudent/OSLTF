@@ -1,7 +1,8 @@
 {
   "authentication":
   {
-    "provider": "LocalFile"
+    "provider": "LocalFile",
+    "usersFile": "Config/users.json"
   },
 
   "database":
@@ -12,21 +13,23 @@
 
   "execution":
   {
-    "engine": "Generic"
+    "engine": "Generic",
+    "timeoutSeconds": 30
   },
 
   "framework":
   {
-    "version": "0.1"
+    "name": "Open Source LabVIEW Test Framework"
   },
 
   "logging":
   {
-    "path": "Logs/"
+    "level": "Info"
   },
 
   "paths":
   {
+    "logs": "Logs/",
     "packages": "Packages/",
     "plugins": "Plugins/",
     "shared": "Shared/"
@@ -35,10 +38,5 @@
   "station":
   {
     "name": "Station01"
-  },
-
-  "users":
-  {
-    "file": "Config/users.json"
   }  
 }
