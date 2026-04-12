@@ -201,6 +201,15 @@ Start app
 - `-9105` in `Abort.vi` of `Execution Service.lvclass`:
   If there is no incoming error and the execution adapter has not been loaded, add an error to the error wire with status `True`, code `-9105`, and source `No execution adapter loaded for abort.`
 
+### Defined Configuration Errors
+
+- `-9000` in `Load Effective Settings.vi` of `Settings Service.lvclass`:
+  Use when the bootstrap settings file cannot be loaded. Return uninitialized `Settings Service` data.
+- `-9004` in the validation VI used by `Load Effective Settings.vi` of `Settings Service.lvclass`:
+  Use when a setting value is invalid. Add the specific setting name and value to the error description. Return uninitialized `Settings Service` data.
+- `-9005` in the validation VI used by `Load Effective Settings.vi` of `Settings Service.lvclass`:
+  Use when a setting value is unsupported. Add the specific setting name and value to the error description. Return uninitialized `Settings Service` data.
+
 ## What NOT to build yet
 
 - Package system
