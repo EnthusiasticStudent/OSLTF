@@ -141,6 +141,7 @@
 				</Item>
 				<Item Name="enums" Type="Folder">
 					<Item Name="Audit Event Type Enum.ctl" Type="VI" URL="../Source/Typedefs/enums/Audit Event Type Enum.ctl"/>
+					<Item Name="Execution Status.ctl" Type="VI" URL="../Source/Typedefs/enums/Execution Status.ctl"/>
 					<Item Name="Permission Enum.ctl" Type="VI" URL="../Source/Typedefs/enums/Permission Enum.ctl"/>
 					<Item Name="Plugin Type Enum.ctl" Type="VI" URL="../Source/Typedefs/enums/Plugin Type Enum.ctl"/>
 					<Item Name="Readiness State Enum.ctl" Type="VI" URL="../Source/Typedefs/enums/Readiness State Enum.ctl"/>
