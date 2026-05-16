@@ -193,6 +193,7 @@ Start app
 - -9100 to -9199 are execution errors
 - -9200 to -9299 are adapter errors
 - -9300 to -9399 are persistence or database errors
+- -9400 to -9499 are authentication errors
 
 ### Defined Execution Errors
 
@@ -209,6 +210,15 @@ Start app
   Use when a setting value is invalid. Add the specific setting name and value to the error description. Return uninitialized `Settings Service` data.
 - `-9005` in the validation VI used by `Load Effective Settings.vi` of `Settings Service.lvclass`:
   Use when a setting value is unsupported. Add the specific setting name and value to the error description. Return uninitialized `Settings Service` data.
+
+### Defined Authentication Errors
+
+- `-9400` in `Login.vi` of `Authentication Service.lvclass`:
+  If the class name of the stored `I Authentication Provider` is `I Authentication Provider.lvclass`, then no specific authentication provider has been loaded. Add an error to the error wire with status `True`, code `-9400`, and source `No authentication provider loaded.`
+- `-9401` in `Login.vi` of `Authentication Service.lvclass`:
+  Use when authentication fails because the provided credentials are not valid. Add an error to the error wire with status `True`, code `-9401`, and source `Authentication failed.`
+- `-9402` in `Resolve Permissions.vi` of `Authentication Service.lvclass`:
+  Use when the current session contains a role value that is not defined in the framework role model. Add an error to the error wire with status `True`, code `-9402`, and source `Undefined role.`
 
 ## What NOT to build yet
 

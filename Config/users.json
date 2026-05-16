@@ -1,16 +1,16 @@
 [
   {
-    "password": "admin",
+    "password": "admiN",
     "role": "Admin",
     "username": "admin"
   },
   {
-    "password": "engineer",
+    "password": "engineeR",
     "role": "Engineer",
     "username": "engineer"
   },
   {
-    "password": "operator",
+    "password": "operatoR",
     "role": "Operator",
     "username": "operator"
   }
