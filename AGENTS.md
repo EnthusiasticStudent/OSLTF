@@ -250,5 +250,20 @@ Start app
   - settings loading uses section-specific JSON loader subVIs
   - validation runs after loading and before class data is updated
   - if loading or validation fails, uninitialized `Settings Service` data is returned
+- `Authentication Service.lvclass` implemented:
+  - `Login.vi`
+  - `Get Current Session.vi`
+  - `Logout.vi`
+  - `Resolve Permissions.vi`
+  - `Check Adapter.vi`
+- `I Authentication Provider.lvclass` updated:
+  - `Authenticate.vi`
+  - `Get User Roles.vi`
+  - `List Users.vi`
+- `Local File Auth Provider.lvclass` implemented:
+  - `Authenticate.vi`
+  - `Get User Roles.vi`
+  - `List Users.vi`
+  - helper VIs for loading `users.json` and parsing roles
 - Next implementation target:
-  - `Authentication Service.lvclass`
+  - `Framework Engine` wiring for settings, authentication, and execution services
